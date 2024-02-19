@@ -1,13 +1,18 @@
 import React from 'react'
 import * as FaIcons from 'react-icons/fa' 
 
-const EnergySystemIcon = require('../icons/renewable-energy1.png');
-const AtmosferSystemIcon = require('../icons/atmosphere1.png');
-const RepairTeamIcon = require('../icons/repair1.png');
 
+
+import EnergySystemIcon from "../../shared/icons/energy.svg"
+import AtmosferSystemIcon from "../../shared/icons/atmosfere.svg"
+import HomeIcon from "../../shared/icons/home.svg"
 
 export const SidebarData = [
     {
+        path: '/',
+        icon:  <img src={HomeIcon}/>
+    },
+    {   
         path: '/energysystempage',
         icon: <img src={EnergySystemIcon}/>
     },
@@ -15,8 +20,5 @@ export const SidebarData = [
         path: '/atmosfersystempage',
         icon: <img src={AtmosferSystemIcon}/>
     },
-    {
-        path: '/repairteampage',
-        icon:  <img src={RepairTeamIcon}/>
-    },
+   
 ]

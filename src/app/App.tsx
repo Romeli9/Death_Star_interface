@@ -1,20 +1,20 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Sidebar from '../widgets/Sidebar'
+import Sidebar from '../widgets/sidebar/Sidebar'
 
-import RepairTeam from '../pages/RepairPage';
+import Home from '../pages/HomePage';
 import EnergySystem from '../pages/EnergySystemPage';
 import AtmosferSystem from '../pages/AtmosferSystemPage';
 
 
-const App: React.FunctionComponent = () => {
+const App: React.FC = () => {
   return (
     <>
       <Router>
         <Sidebar />
         <Routes>
-          <Route path='/repairteampage' element={<RepairTeam />} />            
+          <Route path='/' element={<Home />} />            
           <Route path='/energysystempage' element={<EnergySystem />} />    
           <Route path='/atmosfersystempage' element={<AtmosferSystem />} />
         </Routes>

@@ -3,15 +3,16 @@ import styled from 'styled-components'
 
 
 
-const EnergySystem: React.FunctionComponent = () => {
+const Home: React.FunctionComponent = () => {
     return (
-        <EnergySystemText>EnergySystem</EnergySystemText>
+        <HomeText>HomePage</HomeText>
     )
 }
 
-export default EnergySystem
+export default Home
 
-const EnergySystemText = styled.div`
+
+const HomeText = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
